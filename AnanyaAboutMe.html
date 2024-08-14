@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananya Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            padding: 0px;
+            background-color: rgb(158, 185, 216);
+            color: rgb(18, 5, 39);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .aboutme {
+            background-color: rgb(18, 5, 39);
+            font-size: 70px;
+            font-weight: 600;
+            width: 100%;
+            padding: 10px;
+            color: antiquewhite}
+        .innerdiv {
+        font-size: 25px;
+        font-weight: 300;}
+
+            nav {
+            background-color: rgb(18, 5, 39);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style-type: none;
+            margin: 0 55px;
+            color: antiquewhite;
+            font-size: 20px;
+            display: flex;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+        nav ul li a:hover {
+            color: rgb(165, 147, 205);
+            font-size: 1.2rem
+        }
+        nav ul li input[type="text"]
+		{
+			padding:5px 10px;
+			font-size: 20px;
+			border:2px;
+			border-radius:5px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 80px;}
+        .leftSection {
+            width: 25%;}
+        .leftSection img {
+            width: 55%;
+            margin-top: 50px;}
+        .middleSection {
+            width: 25%;}
+        .middleSection img {
+            width: 60%;
+            margin-top: 50px;}
+        .rightSection {
+            width: 25%;}
+        .rightSection img {
+            width: 70%;
+            margin-top: 50px;}
+
+        .secondSection {
+        display: flex;
+        justify-content: space-around;            
+        margin-top: 50px 0;
+        margin-left: 0px;}
+
+        .thirdSection {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;            
+        margin-left: 0px;}
+
+        .thirdSection ul{
+            font-size:20px; 
+            text-align: left; 
+            background-color:rgb(113, 84, 175); 
+            color: rgb(18, 5, 39); 
+            padding:8px 5px; 
+            border:2px; 
+            border-radius:8px;
+        }
+        .thirdSection ul li{
+            font-weight: 600;
+        }
+
+    </style>
+
+<body>
+    <header>
+        <div class="aboutme"> About Me
+            <div class="innerdiv"> My skills, Education and Experiences</div>
+        </div>
+        <hr style="width: 0px;">
+        <nav>
+            <div>
+                <ul>
+                    <li><a class="active" href="/AnanyaPortfolio.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li><a href="/AnanyaAboutMe.html"><i class="fa fa-fw fa-book"></i> About Me</a></li>
+                    <li><a href="/AnanyaProjects.html"><i class="fa fa-fw fa-laptop"></i> Projects</a></li>
+                    <li><a href="/AnanyaContact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                    <li><i class="fa fa-fw fa-search"></i><input type="text" placeholder="Search..."></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <img src="Study.png">
+            </div>
+            <div class="middleSection">
+                <img src="Skills.png">
+            </div>
+            <div class="rightSection">
+                <img src="Resume.png">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <div class="leftSection">
+                <p style="font-size:20px; text-align: center; background-color:rgb(18, 5, 39); color: antiquewhite; padding:5px 30px; border:2px;
+			    border-radius:5px;">Education</p>
+            </div>
+            <div class="middleSection">
+                <p style="font-size:20px; text-align: center; background-color:rgb(18, 5, 39); color: antiquewhite; padding:5px 30px; border:2px;
+			    border-radius:5px;">Skills</p>
+            </div>
+            <div class="rightSection">
+                <p style="font-size:20px; text-align: center; background-color:rgb(18, 5, 39); color: antiquewhite; padding:5px 30px; border:2px;
+			    border-radius:5px;">Experiences</p>
+            </div>
+        </section>
+
+        <section class="thirdSection">
+            <div class="leftSection">
+               <ul>
+                    <li>Sri Sri Ravishankar Vidya Mandir, Mulund</li>
+                    <li>Pace Junior Science College, Powai</li>
+                    <li>Dwarkadas J. Sanghvi College of Engineering, Mumbai</li>
+                    Sem 1 SGPA:9.05<br>
+                    Sem 2 SGPA:9.05
+                </ul>
+            </div>
+            <div class="middleSection">
+                <ul>
+                    <li style="font-weight: 600;">Coding Skills</li>
+                    C, Java, HTML, CSS, JavaScript
+                    <li>Creative Skills</li>
+                    Digital art (Ibis paint, Sketchbook), Canva, Animation(FlipaClipa)
+                    <li>Other Skills</li>
+                    MS Excel, MS PowerPoint
+                    <li>Soft Skills</li>
+                    Teamwork, Creativity, Critical Thinking, Leadership
+                </ul>
+            </div>
+            <div class="rightSection">
+                <ul>
+                    <li>DJ IIC E-Cell</li>
+                    Creatives
+                    <li>DJS Munsoc</li>
+                    Creatives
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

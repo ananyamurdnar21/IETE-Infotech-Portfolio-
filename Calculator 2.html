@@ -1,0 +1,115 @@
+<html>
+<head>
+	<style>
+		<!--td{ color:green;}-->
+		input[type="button"]
+		{
+            width: 100%; 
+            padding: 20px 40px; 
+            background-color: green; 
+            color: white; 
+            font-size: 15px;  
+            border: none; 
+            border-radius: 5px; 
+        } 
+		input[type="text"]
+		{
+			width:100%;
+			padding:20px 40px;
+			font size: 20px;
+			border=2px;
+			boder-radius:5px;
+		}
+			
+	</style>
+</head>
+<body>
+<form>
+<table border="5">
+	<h2>Calculator</h2>
+	<tr align="center">
+		<td colspan="4"><input type="text" id="num"></td>
+	</tr>
+	<!--<tr>
+		<th colspan="2">Input number 2:</th>
+		<td colspan="2"><input type="number" id="n2"></td>
+	</tr>-->
+	<tr align="center">
+		<td><input type="button" onclick="acceptDigit(this.value)" value="1"></td>
+		<td><input type="button" onclick="acceptDigit(this.value)" value="2"></td>
+		<td><input type="button" onclick="acceptDigit(this.value)" value="3"></td>
+		<td><input type="button" onclick="acceptDigit('+')" value="+"></td>
+	</tr>
+	<tr align="center">
+		<td><input type="button" onclick="acceptDigit(this.value)" value="4"></td>
+		<td><input type="button" onclick="acceptDigit(this.value)" value="5"></td>
+		<td><input type="button" onclick="acceptDigit(this.value)" value="6"></td>
+		<td><input type="button" onclick="acceptDigit('-')" value="-"></td>
+	</tr>
+	<tr align="center">
+		<td><input type="button" onclick="acceptDigit(this.value)" value="7"></td>
+		<td><input type="button" onclick="acceptDigit(this.value)" value="8"></td>
+		<td><input type="button" onclick="acceptDigit(this.value)" value="9"></td>
+		<td><input type="button" onclick="acceptDigit('*')" value="*"></td>
+	</tr>
+	<tr align="center">
+		<td><input type="button" onclick="acceptDigit(this.value)" value="0"></td>
+		<td><Input type="button" onclick="operator(this.value)" value="="></td> 
+		<td><input type="Reset" value="Reset"></td>
+		<td><input type="button" onclick="acceptDigit('/')" value="/"></td>
+	</tr>
+	<tr align="center">
+		<td colspan="2">Result:</td>
+		<td colspan="2"><input type="text" readonly id="demo"></td>
+	</tr>
+</table>
+</form>
+<script>
+
+	/*function acceptDigit(x)
+	{
+		if(document.getElementById("n1").value.length<1)
+		{document.getElementById("n1").value=x;}
+		else if(document.getElementById("n2").value.length<1)
+		{document.getElementById("n2").value=x;}
+		else
+		{alert("Press reset to enter digit")}
+	}	*/
+	function acceptDigit(x)
+	{
+		document.getElementById("num").value+=x;
+	}
+	function operator(y)
+	{
+		var a=document.getElementById("num").value;
+		document.getElementById("demo").value=eval(a);
+	}
+	//var a=parseInt(document.getElementById("n1").value);
+	//var b=parseInt(document.getElementById("n2").value);
+	//document.getElementById()
+	
+	
+	//=a+b;
+	//}
+	/*function subtraction()
+	{
+	var a=parseInt(document.getElementById("n1").value);
+	var b=parseInt(document.getElementById("n2").value);
+	document.getElementById("demo").value=a-b;
+	}
+	function multiplication()
+	{
+	var a=parseInt(document.getElementById("n1").value);
+	var b=parseInt(document.getElementById("n2").value);
+	document.getElementById("demo").value=a*b;
+	}
+	function division()
+	{
+	var a=parseInt(document.getElementById("n1").value);
+	var b=parseInt(document.getElementById("n2").value);
+	document.getElementById("demo").value=a/b;
+	}*/
+	
+</script>
+</body>
+</html>
